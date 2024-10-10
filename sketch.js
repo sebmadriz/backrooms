@@ -24,7 +24,7 @@ function preload() {
   image8 = loadImage("img/image8.jpg");
   image9 = loadImage("img/image9.jpg");
   image10 = loadImage("img/image10.jpg");
-  endCongratulations = loadImage("img/endcongratulations.gif");
+  endCongratulations = loadImage("img/endCongratulations.gif");
   youDied = loadImage("img/youDied.png");
 
 }

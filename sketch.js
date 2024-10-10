@@ -10,9 +10,6 @@ let image9;
 let image10;
 let endCongratulations;
 let youDied;
-let aw;
-let celebration;
-let scary;
 let x = 0;
 
 // load all images
@@ -29,9 +26,6 @@ function preload() {
   image10 = loadImage("img/image10.jpg");
   endCongratulations = loadImage("img/endcongratulations.gif");
   youDied = loadImage("img/youDied.png");
-  aw = loadSound("mp3/aw.mp3");
-  celebration = loadSound("mp3/celebration.mp3");
-  scary = loadSound("mp3/scary.mp3");
 
 }
 
@@ -48,74 +42,75 @@ function setup() {
 function mousePressed(){
   x = x + 1;
   if(x == 1){
+
         print("room 1 open");
         image(image1,0,0,window.innerWidth,window.innerHeight);
-        scary.play();
+    
   }
   if(x == 2){
-    scary.stop();
+    
     print("room 2 open");
     image(image2,0,0,window.innerWidth,window.innerHeight);
-    scary.play();
+
   }
   if(x == 3){
-    scary.stop();
+    
     print("room 3 open");
     image(image3,0,0,window.innerWidth,window.innerHeight);
-    scary.play();
+
   }
   if(x == 4){
-    scary.stop();
+    
     print("room 4 open");
     image(image4,0,0,window.innerWidth,window.innerHeight);
-    scary.play();
+
   }
   if(x == 5){
-    scary.stop();
+    
     print("room 5 open");
     image(image5,0,0,window.innerWidth,window.innerHeight);
-    scary.play();
+
   }
   if(x == 6){
-    scary.stop();
+    
     print("room 6 open");
     image(image6,0,0,window.innerWidth,window.innerHeight);
-    scary.play();
+
   }
   if(x == 7){
-    scary.stop();
+    
     print("room 7 open");
     image(image7,0,0,window.innerWidth,window.innerHeight);
-    scary.play();
+
   }
   if(x == 8){
-    scary.stop();
+    
     print("room 8 open");
     image(image8,0,0,window.innerWidth,window.innerHeight);
-    scary.play();
+
   }
   if(x == 9){
-    scary.stop();
+    
     print("room 9 open");
     image(image9,0,0,window.innerWidth,window.innerHeight);
-    scary.play();
+
   }
   if(x == 10){
-    scary.stop();
+    
     print("room 10 open");
     image(image10,0,0,window.innerWidth,window.innerHeight);
-    scary.play();
+
   }
   if(x == 11){
-    scary.stop();
+    
     print("Congratulations! You made it through!");
     image(endCongratulations,0,0,window.innerWidth,window.innerHeight);
-    celebration.play();
+    
   }
   if(x == 12){
-    celebration.stop();
+    
     print("Actually you died! :(");
     image(youDied,0,0,window.innerWidth,window.innerHeight);
-    aw.play();
+    
   }
   }
